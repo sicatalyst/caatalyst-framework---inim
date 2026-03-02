@@ -1,0 +1,56 @@
+/* ===== VIDEO MODULE ===== */
+
+.video-module {
+  padding: 60px 0;
+}
+
+.video-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-wrapper.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.video-wrapper.aspect-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.video-wrapper.aspect-21-9 {
+  aspect-ratio: 21 / 9;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-caption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-style: italic;
+}

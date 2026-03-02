@@ -1,0 +1,89 @@
+{
+  "key": "group_footer",
+  "title": "Footer Module",
+  "fields": [
+    {
+      "key": "field_footer_logo_images",
+      "label": "Logo Images",
+      "name": "footer_logo_images",
+      "type": "gallery",
+      "return_format": "array"
+    },
+    {
+      "key": "field_footer_intro_text",
+      "label": "Intro Text",
+      "name": "footer_intro_text",
+      "type": "textarea"
+    },
+    {
+      "key": "field_footer_accreditations_image",
+      "label": "Accreditations Image",
+      "name": "footer_accreditations_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_footer_address",
+      "label": "Address",
+      "name": "footer_address",
+      "type": "textarea"
+    },
+    {
+      "key": "field_footer_company_number",
+      "label": "Company Number",
+      "name": "footer_company_number",
+      "type": "text"
+    },
+    {
+      "key": "field_footer_social_icons",
+      "label": "Social Icons",
+      "name": "footer_social_icons",
+      "type": "gallery",
+      "return_format": "array"
+    },
+    {
+      "key": "field_footer_columns",
+      "label": "Footer Columns",
+      "name": "footer_columns",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_footer_column_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_footer_column_links",
+          "label": "Links",
+          "name": "links",
+          "type": "repeater",
+          "sub_fields": [
+            {
+              "key": "field_footer_link_text",
+              "label": "Text",
+              "name": "text",
+              "type": "text"
+            },
+            {
+              "key": "field_footer_link_url",
+              "label": "URL",
+              "name": "url",
+              "type": "url"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

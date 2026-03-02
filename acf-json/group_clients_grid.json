@@ -1,0 +1,43 @@
+{
+  "key": "group_clients_grid",
+  "title": "Clients Grid Module",
+  "fields": [
+    {
+      "key": "field_clients_grid_title",
+      "label": "Title",
+      "name": "clients_grid_title",
+      "type": "text"
+    },
+    {
+      "key": "field_clients_grid_cards",
+      "label": "Client Cards",
+      "name": "clients_grid_cards",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_client_card_image",
+          "label": "Image",
+          "name": "image",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_client_card_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "key": "group_post_listing",
+  "title": "Post Type Listing",
+  "fields": [
+    {
+      "key": "field_post_listing_title",
+      "label": "Section Title",
+      "name": "post_listing_title",
+      "type": "text",
+      "instructions": "Optional title above listing"
+    },
+    {
+      "key": "field_post_listing_post_type",
+      "label": "Post Type",
+      "name": "post_listing_post_type",
+      "type": "select",
+      "choices": {
+        "post": "Posts",
+        "page": "Pages"
+      },
+      "default_value": "post",
+      "required": 1,
+      "instructions": "Select which post type to display"
+    },
+    {
+      "key": "field_post_listing_layout",
+      "label": "Layout",
+      "name": "post_listing_layout",
+      "type": "select",
+      "choices": {
+        "grid": "Grid",
+        "slider": "Slider"
+      },
+      "default_value": "grid",
+      "required": 1
+    },
+    {
+      "key": "field_post_listing_posts_per_page",
+      "label": "Number of Posts",
+      "name": "post_listing_posts_per_page",
+      "type": "number",
+      "default_value": 6,
+      "min": 1,
+      "max": 50,
+      "step": 1
+    },
+    {
+      "key": "field_post_listing_columns",
+      "label": "Grid Columns",
+      "name": "post_listing_columns",
+      "type": "select",
+      "choices": {
+        "2": "2 Columns",
+        "3": "3 Columns",
+        "4": "4 Columns"
+      },
+      "default_value": "3",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_post_listing_layout",
+            "operator": "==",
+            "value": "grid"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "field_post_listing_slider_options",
+      "label": "Slider Options",
+      "name": "post_listing_slider_options",
+      "type": "group",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_post_listing_layout",
+            "operator": "==",
+            "value": "slider"
+          }
+        ]
+      ],
+      "sub_fields": [
+        {
+          "key": "field_slider_slides_per_view",
+          "label": "Slides Per View",
+          "name": "slides_per_view",
+          "type": "number",
+          "default_value": 3,
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_slider_space_between",
+          "label": "Space Between (px)",
+          "name": "space_between",
+          "type": "number",
+          "default_value": 30,
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_slider_loop",
+          "label": "Loop",
+          "name": "loop",
+          "type": "true_false",
+          "default_value": 1,
+          "ui": 1,
+          "wrapper": {
+            "width": "34"
+          }
+        },
+        {
+          "key": "field_slider_autoplay",
+          "label": "Autoplay",
+          "name": "autoplay",
+          "type": "true_false",
+          "default_value": 0,
+          "ui": 1,
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_slider_autoplay_delay",
+          "label": "Autoplay Delay (ms)",
+          "name": "autoplay_delay",
+          "type": "number",
+          "default_value": 3000,
+          "min": 1000,
+          "max": 10000,
+          "step": 500,
+          "conditional_logic": [
+            [
+              {
+                "field": "field_slider_autoplay",
+                "operator": "==",
+                "value": "1"
+              }
+            ]
+          ],
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_slider_speed",
+          "label": "Transition Speed (ms)",
+          "name": "speed",
+          "type": "number",
+          "default_value": 600,
+          "min": 100,
+          "max": 2000,
+          "step": 100,
+          "wrapper": {
+            "width": "34"
+          }
+        },
+        {
+          "key": "field_slider_show_arrows",
+          "label": "Show Navigation Arrows",
+          "name": "show_arrows",
+          "type": "true_false",
+          "default_value": 1,
+          "ui": 1,
+          "wrapper": {
+            "width": "50"
+          }
+        },
+        {
+          "key": "field_slider_show_dots",
+          "label": "Show Pagination Dots",
+          "name": "show_dots",
+          "type": "true_false",
+          "default_value": 1,
+          "ui": 1,
+          "wrapper": {
+            "width": "50"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_post_listing_show_featured_image",
+      "label": "Show Featured Image",
+      "name": "post_listing_show_featured_image",
+      "type": "true_false",
+      "default_value": 1,
+      "ui": 1
+    },
+    {
+      "key": "field_post_listing_show_excerpt",
+      "label": "Show Excerpt",
+      "name": "post_listing_show_excerpt",
+      "type": "true_false",
+      "default_value": 1,
+      "ui": 1
+    },
+    {
+      "key": "field_post_listing_show_date",
+      "label": "Show Date",
+      "name": "post_listing_show_date",
+      "type": "true_false",
+      "default_value": 1,
+      "ui": 1
+    },
+    {
+      "key": "field_post_listing_show_author",
+      "label": "Show Author",
+      "name": "post_listing_show_author",
+      "type": "true_false",
+      "default_value": 0,
+      "ui": 1
+    },
+    {
+      "key": "field_post_listing_read_more_text",
+      "label": "Read More Text",
+      "name": "post_listing_read_more_text",
+      "type": "text",
+      "default_value": "Read More"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0
+}

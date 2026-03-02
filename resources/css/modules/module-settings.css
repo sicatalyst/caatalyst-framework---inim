@@ -1,0 +1,71 @@
+/* ===== MODULE SETTINGS ===== */
+
+/* Visibility utilities */
+.hide-desktop {
+  display: none !important;
+}
+
+.hide-tablet {
+  display: block !important;
+}
+
+.hide-mobile {
+  display: block !important;
+}
+
+@media (min-width: 1024px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Container width utilities */
+.container-full {
+  max-width: 100% !important;
+}
+
+.container-boxed {
+  max-width: 1440px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Background overlay for videos */
+.module-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Background video */
+.module-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Ensure module content is above background */
+.module-with-bg > * {
+  position: relative;
+  z-index: 2;
+}

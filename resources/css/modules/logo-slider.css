@@ -1,0 +1,26 @@
+/* ===== LOGO SLIDER ===== */
+.logo-slider-section {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.logo-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+.logo-swiper .swiper-slide img {
+  max-width: 100%;
+  max-height: 3rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.logo-swiper .swiper-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}

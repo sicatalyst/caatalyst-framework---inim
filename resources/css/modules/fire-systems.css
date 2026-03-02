@@ -1,0 +1,94 @@
+/* ===== FIRE SYSTEMS CTAs ===== */
+.fire-systems-ctas {
+  background-color: #174274;
+  padding: 3rem 2rem;
+}
+
+.fire-systems-title {
+  max-width: 1440px;
+  margin: 0 auto 3rem;
+  font-family: "Kumbh Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.fire-systems-grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 0;
+  background: url(https://c.animaapp.com/mm9g6kq1I78y5h/img/fire-fighting-equipment-1-1.png) center/cover;
+  position: relative;
+}
+
+.fire-systems-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 31, 32, 0.84);
+  z-index: 0;
+}
+
+.fire-system-card {
+  position: relative;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.fire-system-card:last-child {
+  border-right: none;
+}
+
+.fire-system-card:hover {
+  background-color: rgba(136, 175, 255, 0.1);
+}
+
+.fire-system-card img:not(.arrow-icon) {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+}
+
+.fire-system-card h3 {
+  font-family: "Kumbh Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.fire-system-card .arrow-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .fire-systems-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fire-system-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .fire-system-card:last-child {
+    border-bottom: none;
+  }
+}

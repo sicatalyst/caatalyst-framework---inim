@@ -1,0 +1,142 @@
+/* ===== SECTORS SLIDER ===== */
+.sectors-slider {
+  background-color: #174274;
+  padding: 4rem 2rem;
+}
+
+.sectors-header {
+  max-width: 1440px;
+  margin: 0 auto 3rem;
+}
+
+.sectors-nav-swiper {
+  max-width: 1440px;
+  margin: 0 auto 2rem;
+  padding-bottom: 3rem;
+}
+
+.sector-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.sector-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sector-nav-item.active {
+  background-color: rgba(136, 175, 255, 0.2);
+}
+
+.sector-nav-item img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+.sector-nav-item span {
+  font-family: "Kumbh Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.sectors-pagination {
+  text-align: center;
+}
+
+.sectors-pagination .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.5;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.sectors-pagination .swiper-pagination-bullet-active {
+  background: #88afff;
+  opacity: 1;
+}
+
+.sectors-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sector-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.sector-content-item h3 {
+  font-family: "Kumbh Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 1.625rem);
+  margin-bottom: 1.5rem;
+}
+
+.sector-content-item p {
+  font-family: "Arial", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.sector-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sector-content-image img {
+  width: 100%;
+  max-width: 24rem;
+  height: 24rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sectors-explore {
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sector-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectors-slider {
+    padding: 3rem 1rem;
+  }
+
+  .sector-nav-item img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .sector-nav-item span {
+    font-size: 0.875rem;
+  }
+
+  .sector-content-image img {
+    max-width: 18rem;
+    height: 18rem;
+  }
+}

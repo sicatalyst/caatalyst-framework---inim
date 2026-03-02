@@ -1,0 +1,74 @@
+{
+  "key": "group_hero",
+  "title": "Hero Banner Module",
+  "fields": [
+    {
+      "key": "field_hero_video_url",
+      "label": "Video URL",
+      "name": "hero_video_url",
+      "type": "url"
+    },
+    {
+      "key": "field_hero_title",
+      "label": "Title",
+      "name": "hero_title",
+      "type": "textarea",
+      "rows": 3
+    },
+    {
+      "key": "field_hero_subtitle",
+      "label": "Subtitle",
+      "name": "hero_subtitle",
+      "type": "text"
+    },
+    {
+      "key": "field_hero_primary_button",
+      "label": "Primary Button",
+      "name": "hero_primary_button",
+      "type": "group",
+      "sub_fields": [
+        {
+          "key": "field_hero_primary_text",
+          "label": "Text",
+          "name": "text",
+          "type": "text"
+        },
+        {
+          "key": "field_hero_primary_url",
+          "label": "URL",
+          "name": "url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "field_hero_secondary_button",
+      "label": "Secondary Button",
+      "name": "hero_secondary_button",
+      "type": "group",
+      "sub_fields": [
+        {
+          "key": "field_hero_secondary_text",
+          "label": "Text",
+          "name": "text",
+          "type": "text"
+        },
+        {
+          "key": "field_hero_secondary_url",
+          "label": "URL",
+          "name": "url",
+          "type": "url"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

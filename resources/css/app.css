@@ -1,0 +1,64 @@
+/**
+ * INIM Fire Intelligence - Main Styles
+ * 
+ * This file imports Tailwind and global styles.
+ * Module-specific styles are loaded dynamically.
+ */
+
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+
+/* CSS Variables */
+:root {
+  --inim-blue: #174274;
+  --inim-blue-dark: #0f2d4d;
+  --inim-blue-light: #88afff;
+  --inim-red: #ed1c24;
+  --inim-black: #231f20;
+}
+
+/* Global Resets */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+/* Base container */
+.inim-visual-design {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Import module styles */
+@import "./modules/header.css";
+@import "./modules/hero.css";
+@import "./modules/logo-slider.css";
+@import "./modules/about.css";
+@import "./modules/clients-grid.css";
+@import "./modules/sectors-slider.css";
+@import "./modules/trusted-by.css";
+@import "./modules/fire-systems.css";
+@import "./modules/products-slider.css";
+@import "./modules/logos-slider.css";
+@import "./modules/footer.css";
+@import "./modules/module-settings.css";

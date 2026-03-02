@@ -1,0 +1,99 @@
+{
+  "key": "group_cta_buttons",
+  "title": "CTA Button Repeater",
+  "fields": [
+    {
+      "key": "field_cta_title",
+      "label": "Section Title",
+      "name": "cta_title",
+      "type": "text",
+      "instructions": "Optional title above buttons"
+    },
+    {
+      "key": "field_cta_description",
+      "label": "Description",
+      "name": "cta_description",
+      "type": "textarea",
+      "rows": 3,
+      "instructions": "Optional description text"
+    },
+    {
+      "key": "field_cta_buttons",
+      "label": "Buttons",
+      "name": "cta_buttons",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Button",
+      "min": 1,
+      "sub_fields": [
+        {
+          "key": "field_cta_button_text",
+          "label": "Button Text",
+          "name": "text",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_cta_button_url",
+          "label": "URL",
+          "name": "url",
+          "type": "url",
+          "required": 1
+        },
+        {
+          "key": "field_cta_button_style",
+          "label": "Style",
+          "name": "style",
+          "type": "select",
+          "choices": {
+            "primary": "Primary",
+            "secondary": "Secondary",
+            "outline": "Outline",
+            "text": "Text Only"
+          },
+          "default_value": "primary"
+        },
+        {
+          "key": "field_cta_button_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "return_format": "array",
+          "instructions": "Optional icon"
+        },
+        {
+          "key": "field_cta_button_target",
+          "label": "Open in New Tab",
+          "name": "target_blank",
+          "type": "true_false",
+          "default_value": 0,
+          "ui": 1
+        }
+      ]
+    },
+    {
+      "key": "field_cta_alignment",
+      "label": "Button Alignment",
+      "name": "cta_alignment",
+      "type": "select",
+      "choices": {
+        "left": "Left",
+        "center": "Center",
+        "right": "Right"
+      },
+      "default_value": "center"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0
+}

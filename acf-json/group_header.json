@@ -1,0 +1,146 @@
+{
+  "key": "group_header",
+  "title": "Header Module",
+  "fields": [
+    {
+      "key": "field_header_logo_images",
+      "label": "Logo Images",
+      "name": "header_logo_images",
+      "type": "gallery",
+      "return_format": "array",
+      "preview_size": "thumbnail",
+      "library": "all"
+    },
+    {
+      "key": "field_header_navigation",
+      "label": "Navigation Items",
+      "name": "header_navigation",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_nav_label",
+          "label": "Label",
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "key": "field_nav_has_mega_menu",
+          "label": "Has Mega Menu",
+          "name": "has_mega_menu",
+          "type": "true_false",
+          "default_value": 0
+        },
+        {
+          "key": "field_nav_mega_menu_columns",
+          "label": "Mega Menu Columns",
+          "name": "mega_menu_columns",
+          "type": "repeater",
+          "conditional_logic": [
+            [
+              {
+                "field": "field_nav_has_mega_menu",
+                "operator": "==",
+                "value": "1"
+              }
+            ]
+          ],
+          "sub_fields": [
+            {
+              "key": "field_mega_column_title",
+              "label": "Column Title",
+              "name": "title",
+              "type": "text"
+            },
+            {
+              "key": "field_mega_column_links",
+              "label": "Links",
+              "name": "links",
+              "type": "repeater",
+              "sub_fields": [
+                {
+                  "key": "field_mega_link_text",
+                  "label": "Text",
+                  "name": "text",
+                  "type": "text"
+                },
+                {
+                  "key": "field_mega_link_url",
+                  "label": "URL",
+                  "name": "url",
+                  "type": "url"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "field_nav_has_flyout",
+          "label": "Has Flyout Menu",
+          "name": "has_flyout",
+          "type": "true_false",
+          "default_value": 0
+        },
+        {
+          "key": "field_nav_flyout_links",
+          "label": "Flyout Links",
+          "name": "flyout_links",
+          "type": "repeater",
+          "conditional_logic": [
+            [
+              {
+                "field": "field_nav_has_flyout",
+                "operator": "==",
+                "value": "1"
+              }
+            ]
+          ],
+          "sub_fields": [
+            {
+              "key": "field_flyout_link_text",
+              "label": "Text",
+              "name": "text",
+              "type": "text"
+            },
+            {
+              "key": "field_flyout_link_url",
+              "label": "URL",
+              "name": "url",
+              "type": "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_header_contact_button_text",
+      "label": "Contact Button Text",
+      "name": "header_contact_button_text",
+      "type": "text",
+      "default_value": "Contact us"
+    },
+    {
+      "key": "field_header_search_icon",
+      "label": "Search Icon",
+      "name": "header_search_icon",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_header_menu_icon",
+      "label": "Mobile Menu Icon",
+      "name": "header_menu_icon",
+      "type": "image",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

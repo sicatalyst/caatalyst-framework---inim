@@ -1,0 +1,74 @@
+{
+  "key": "group_sectors",
+  "title": "Sectors Slider Module",
+  "fields": [
+    {
+      "key": "field_sectors_label",
+      "label": "Label",
+      "name": "sectors_label",
+      "type": "text"
+    },
+    {
+      "key": "field_sectors_title",
+      "label": "Title",
+      "name": "sectors_title",
+      "type": "text"
+    },
+    {
+      "key": "field_sectors_items",
+      "label": "Sector Items",
+      "name": "sectors_items",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_sector_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_sector_name",
+          "label": "Name",
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "key": "field_sector_content_title",
+          "label": "Content Title",
+          "name": "content_title",
+          "type": "text"
+        },
+        {
+          "key": "field_sector_content_description",
+          "label": "Content Description",
+          "name": "content_description",
+          "type": "textarea"
+        },
+        {
+          "key": "field_sector_content_image",
+          "label": "Content Image",
+          "name": "content_image",
+          "type": "image",
+          "return_format": "array"
+        }
+      ]
+    },
+    {
+      "key": "field_sectors_button_text",
+      "label": "Button Text",
+      "name": "sectors_button_text",
+      "type": "text"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

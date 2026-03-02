@@ -1,0 +1,634 @@
+{
+  "key": "group_module_settings",
+  "title": "Module Settings (Clone)",
+  "fields": [
+    {
+      "key": "field_module_settings_tabs",
+      "label": "Module Settings",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_general_tab",
+      "label": "General",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_html_id",
+      "label": "HTML ID",
+      "name": "module_html_id",
+      "type": "text",
+      "instructions": "Unique identifier for this module (e.g., 'about-section'). Used for anchor links.",
+      "placeholder": "my-section-id",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_custom_classes",
+      "label": "Custom CSS Classes",
+      "name": "module_custom_classes",
+      "type": "text",
+      "instructions": "Space-separated CSS classes (e.g., 'custom-style dark-theme').",
+      "placeholder": "class-one class-two",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_spacing_tab",
+      "label": "Spacing",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_padding_top",
+      "label": "Padding Top",
+      "name": "module_padding_top",
+      "type": "select",
+      "instructions": "Top padding for this module",
+      "choices": {
+        "": "Default",
+        "0": "None (0)",
+        "20": "XS (20px)",
+        "40": "SM (40px)",
+        "60": "MD (60px)",
+        "80": "LG (80px)",
+        "120": "XL (120px)",
+        "160": "2XL (160px)"
+      },
+      "default_value": "",
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_padding_bottom",
+      "label": "Padding Bottom",
+      "name": "module_padding_bottom",
+      "type": "select",
+      "instructions": "Bottom padding for this module",
+      "choices": {
+        "": "Default",
+        "0": "None (0)",
+        "20": "XS (20px)",
+        "40": "SM (40px)",
+        "60": "MD (60px)",
+        "80": "LG (80px)",
+        "120": "XL (120px)",
+        "160": "2XL (160px)"
+      },
+      "default_value": "",
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_margin_top",
+      "label": "Margin Top",
+      "name": "module_margin_top",
+      "type": "select",
+      "instructions": "Top margin for this module",
+      "choices": {
+        "": "Default",
+        "0": "None (0)",
+        "20": "XS (20px)",
+        "40": "SM (40px)",
+        "60": "MD (60px)",
+        "80": "LG (80px)",
+        "120": "XL (120px)",
+        "160": "2XL (160px)"
+      },
+      "default_value": "",
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_margin_bottom",
+      "label": "Margin Bottom",
+      "name": "module_margin_bottom",
+      "type": "select",
+      "instructions": "Bottom margin for this module",
+      "choices": {
+        "": "Default",
+        "0": "None (0)",
+        "20": "XS (20px)",
+        "40": "SM (40px)",
+        "60": "MD (60px)",
+        "80": "LG (80px)",
+        "120": "XL (120px)",
+        "160": "2XL (160px)"
+      },
+      "default_value": "",
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_background_tab",
+      "label": "Background",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_background_type",
+      "label": "Background Type",
+      "name": "module_background_type",
+      "type": "select",
+      "instructions": "Choose background type for this module",
+      "choices": {
+        "none": "None",
+        "color": "Solid Color",
+        "gradient": "Gradient",
+        "image": "Image",
+        "video": "Video"
+      },
+      "default_value": "none"
+    },
+    {
+      "key": "field_module_background_color",
+      "label": "Background Color",
+      "name": "module_background_color",
+      "type": "color_picker",
+      "instructions": "Choose a solid background color",
+      "default_value": "#ffffff",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_background_type",
+            "operator": "==",
+            "value": "color"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "field_module_background_gradient",
+      "label": "Gradient",
+      "name": "module_background_gradient",
+      "type": "group",
+      "instructions": "Define gradient colors and direction",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_background_type",
+            "operator": "==",
+            "value": "gradient"
+          }
+        ]
+      ],
+      "sub_fields": [
+        {
+          "key": "field_gradient_color_1",
+          "label": "Color 1",
+          "name": "color_1",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_gradient_color_2",
+          "label": "Color 2",
+          "name": "color_2",
+          "type": "color_picker",
+          "default_value": "#f0f0f0",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_gradient_direction",
+          "label": "Direction",
+          "name": "direction",
+          "type": "select",
+          "choices": {
+            "to bottom": "Top to Bottom",
+            "to top": "Bottom to Top",
+            "to right": "Left to Right",
+            "to left": "Right to Left",
+            "135deg": "Diagonal (↘)",
+            "45deg": "Diagonal (↗)"
+          },
+          "default_value": "to bottom",
+          "wrapper": {
+            "width": "34"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_module_background_image",
+      "label": "Background Image",
+      "name": "module_background_image",
+      "type": "image",
+      "instructions": "Upload background image",
+      "return_format": "array",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_background_type",
+            "operator": "==",
+            "value": "image"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "field_module_background_image_settings",
+      "label": "Image Settings",
+      "name": "module_background_image_settings",
+      "type": "group",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_background_type",
+            "operator": "==",
+            "value": "image"
+          }
+        ]
+      ],
+      "sub_fields": [
+        {
+          "key": "field_bg_image_size",
+          "label": "Size",
+          "name": "size",
+          "type": "select",
+          "choices": {
+            "cover": "Cover",
+            "contain": "Contain",
+            "auto": "Auto"
+          },
+          "default_value": "cover",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_bg_image_position",
+          "label": "Position",
+          "name": "position",
+          "type": "select",
+          "choices": {
+            "center center": "Center",
+            "top center": "Top",
+            "bottom center": "Bottom",
+            "center left": "Left",
+            "center right": "Right"
+          },
+          "default_value": "center center",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_bg_image_repeat",
+          "label": "Repeat",
+          "name": "repeat",
+          "type": "select",
+          "choices": {
+            "no-repeat": "No Repeat",
+            "repeat": "Repeat",
+            "repeat-x": "Repeat X",
+            "repeat-y": "Repeat Y"
+          },
+          "default_value": "no-repeat",
+          "wrapper": {
+            "width": "34"
+          }
+        },
+        {
+          "key": "field_bg_image_overlay",
+          "label": "Overlay Color",
+          "name": "overlay",
+          "type": "color_picker",
+          "instructions": "Optional overlay color (with transparency)",
+          "enable_opacity": 1,
+          "wrapper": {
+            "width": "50"
+          }
+        },
+        {
+          "key": "field_bg_image_parallax",
+          "label": "Parallax Effect",
+          "name": "parallax",
+          "type": "true_false",
+          "instructions": "Enable parallax scrolling effect",
+          "default_value": 0,
+          "wrapper": {
+            "width": "50"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_module_background_video",
+      "label": "Background Video",
+      "name": "module_background_video",
+      "type": "group",
+      "instructions": "Video background settings",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_background_type",
+            "operator": "==",
+            "value": "video"
+          }
+        ]
+      ],
+      "sub_fields": [
+        {
+          "key": "field_bg_video_url",
+          "label": "Video URL",
+          "name": "url",
+          "type": "url",
+          "instructions": "MP4 video URL or YouTube/Vimeo embed URL",
+          "wrapper": {
+            "width": "100"
+          }
+        },
+        {
+          "key": "field_bg_video_fallback",
+          "label": "Fallback Image",
+          "name": "fallback",
+          "type": "image",
+          "instructions": "Shown on mobile or if video fails to load",
+          "return_format": "array",
+          "wrapper": {
+            "width": "50"
+          }
+        },
+        {
+          "key": "field_bg_video_overlay",
+          "label": "Overlay Color",
+          "name": "overlay",
+          "type": "color_picker",
+          "instructions": "Optional overlay color (with transparency)",
+          "enable_opacity": 1,
+          "wrapper": {
+            "width": "50"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_module_animation_tab",
+      "label": "Animation",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_animation_enabled",
+      "label": "Enable Animation",
+      "name": "module_animation_enabled",
+      "type": "true_false",
+      "instructions": "Enable GSAP scroll-triggered animations for this module",
+      "default_value": 0
+    },
+    {
+      "key": "field_module_animation_type",
+      "label": "Animation Type",
+      "name": "module_animation_type",
+      "type": "select",
+      "instructions": "Choose animation effect",
+      "choices": {
+        "fade": "Fade In",
+        "fadeUp": "Fade Up",
+        "fadeDown": "Fade Down",
+        "fadeLeft": "Fade Left",
+        "fadeRight": "Fade Right",
+        "scale": "Scale In",
+        "slideUp": "Slide Up",
+        "slideDown": "Slide Down",
+        "slideLeft": "Slide Left",
+        "slideRight": "Slide Right"
+      },
+      "default_value": "fadeUp",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_animation_enabled",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_animation_duration",
+      "label": "Duration (seconds)",
+      "name": "module_animation_duration",
+      "type": "number",
+      "instructions": "Animation duration in seconds",
+      "default_value": 1,
+      "min": 0.1,
+      "max": 5,
+      "step": 0.1,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_animation_enabled",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_animation_delay",
+      "label": "Delay (seconds)",
+      "name": "module_animation_delay",
+      "type": "number",
+      "instructions": "Delay before animation starts",
+      "default_value": 0,
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_animation_enabled",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "25"
+      }
+    },
+    {
+      "key": "field_module_animation_easing",
+      "label": "Easing",
+      "name": "module_animation_easing",
+      "type": "select",
+      "instructions": "Animation easing function",
+      "choices": {
+        "power1.out": "Power1 Out (Gentle)",
+        "power2.out": "Power2 Out (Medium)",
+        "power3.out": "Power3 Out (Strong)",
+        "power4.out": "Power4 Out (Very Strong)",
+        "back.out(1.7)": "Back Out (Overshoot)",
+        "elastic.out(1, 0.3)": "Elastic Out (Bounce)",
+        "bounce.out": "Bounce Out"
+      },
+      "default_value": "power2.out",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_animation_enabled",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_animation_stagger",
+      "label": "Stagger Children",
+      "name": "module_animation_stagger",
+      "type": "number",
+      "instructions": "Delay between child elements (0 = no stagger)",
+      "default_value": 0,
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_module_animation_enabled",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_visibility_tab",
+      "label": "Visibility",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_visibility_desktop",
+      "label": "Show on Desktop",
+      "name": "module_visibility_desktop",
+      "type": "true_false",
+      "instructions": "Show this module on desktop (≥1024px)",
+      "default_value": 1,
+      "wrapper": {
+        "width": "33"
+      }
+    },
+    {
+      "key": "field_module_visibility_tablet",
+      "label": "Show on Tablet",
+      "name": "module_visibility_tablet",
+      "type": "true_false",
+      "instructions": "Show this module on tablet (768px-1023px)",
+      "default_value": 1,
+      "wrapper": {
+        "width": "33"
+      }
+    },
+    {
+      "key": "field_module_visibility_mobile",
+      "label": "Show on Mobile",
+      "name": "module_visibility_mobile",
+      "type": "true_false",
+      "instructions": "Show this module on mobile (<768px)",
+      "default_value": 1,
+      "wrapper": {
+        "width": "34"
+      }
+    },
+    {
+      "key": "field_module_advanced_tab",
+      "label": "Advanced",
+      "name": "",
+      "type": "tab",
+      "placement": "left",
+      "endpoint": 0
+    },
+    {
+      "key": "field_module_container_width",
+      "label": "Container Width",
+      "name": "module_container_width",
+      "type": "select",
+      "instructions": "Maximum width constraint for module content",
+      "choices": {
+        "": "Default",
+        "full": "Full Width (100%)",
+        "wide": "Wide (1400px)",
+        "standard": "Standard (1200px)",
+        "narrow": "Narrow (960px)",
+        "tight": "Tight (720px)"
+      },
+      "default_value": "",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_z_index",
+      "label": "Z-Index",
+      "name": "module_z_index",
+      "type": "number",
+      "instructions": "Stacking order (higher = on top). Leave empty for default.",
+      "placeholder": "auto",
+      "min": -1,
+      "max": 9999,
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_module_custom_css",
+      "label": "Custom CSS",
+      "name": "module_custom_css",
+      "type": "textarea",
+      "instructions": "Advanced: Add custom CSS for this module only. Use with caution.",
+      "placeholder": ".my-module {\n  /* your styles */\n}",
+      "rows": 6
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0
+}

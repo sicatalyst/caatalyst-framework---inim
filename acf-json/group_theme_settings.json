@@ -1,0 +1,1015 @@
+{
+  "key": "group_theme_settings",
+  "title": "Theme Settings",
+  "fields": [
+    {
+      "key": "field_brand_colors_tab",
+      "label": "Brand Colors",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_primary_color",
+      "label": "Primary Color",
+      "name": "primary_color",
+      "type": "color_picker",
+      "default_value": "#174274",
+      "instructions": "Main brand color (used for buttons, links, accents)"
+    },
+    {
+      "key": "field_secondary_color",
+      "label": "Secondary Color",
+      "name": "secondary_color",
+      "type": "color_picker",
+      "default_value": "#ed1c24",
+      "instructions": "Secondary brand color (used for CTAs, highlights)"
+    },
+    {
+      "key": "field_dark_color",
+      "label": "Dark Color",
+      "name": "dark_color",
+      "type": "color_picker",
+      "default_value": "#0f2d4d",
+      "instructions": "Dark variant of primary color"
+    },
+    {
+      "key": "field_light_color",
+      "label": "Light Color",
+      "name": "light_color",
+      "type": "color_picker",
+      "default_value": "#88afff",
+      "instructions": "Light variant of primary color"
+    },
+    {
+      "key": "field_cta_buttons_tab",
+      "label": "CTA Buttons",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_cta_primary",
+      "label": "Primary Button Style",
+      "name": "cta_primary",
+      "type": "group",
+      "instructions": "Default primary button appearance",
+      "sub_fields": [
+        {
+          "key": "field_cta_primary_bg",
+          "label": "Background Color",
+          "name": "bg_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_primary_text",
+          "label": "Text Color",
+          "name": "text_color",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_primary_bg_hover",
+          "label": "Background Hover",
+          "name": "bg_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#0f2d4d",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_primary_text_hover",
+          "label": "Text Hover",
+          "name": "text_hover",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_primary_border",
+          "label": "Border Color",
+          "name": "border_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_primary_border_hover",
+          "label": "Border Hover",
+          "name": "border_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#0f2d4d",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_primary_border_width",
+          "label": "Border Width (px)",
+          "name": "border_width",
+          "type": "number",
+          "default_value": 2,
+          "min": 0,
+          "max": 10,
+          "wrapper": {
+            "width": "34"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_cta_secondary",
+      "label": "Secondary Button Style",
+      "name": "cta_secondary",
+      "type": "group",
+      "instructions": "Outline/ghost button appearance",
+      "sub_fields": [
+        {
+          "key": "field_cta_secondary_bg",
+          "label": "Background Color",
+          "name": "bg_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "rgba(255,255,255,0)",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_secondary_text",
+          "label": "Text Color",
+          "name": "text_color",
+          "type": "color_picker",
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_secondary_bg_hover",
+          "label": "Background Hover",
+          "name": "bg_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_secondary_text_hover",
+          "label": "Text Hover",
+          "name": "text_hover",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_secondary_border",
+          "label": "Border Color",
+          "name": "border_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_secondary_border_hover",
+          "label": "Border Hover",
+          "name": "border_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_secondary_border_width",
+          "label": "Border Width (px)",
+          "name": "border_width",
+          "type": "number",
+          "default_value": 2,
+          "min": 0,
+          "max": 10,
+          "wrapper": {
+            "width": "34"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_cta_tertiary",
+      "label": "Tertiary Button Style",
+      "name": "cta_tertiary",
+      "type": "group",
+      "instructions": "Alternative button style (e.g., accent color)",
+      "sub_fields": [
+        {
+          "key": "field_cta_tertiary_bg",
+          "label": "Background Color",
+          "name": "bg_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#ed1c24",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_text",
+          "label": "Text Color",
+          "name": "text_color",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_bg_hover",
+          "label": "Background Hover",
+          "name": "bg_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#c41820",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_text_hover",
+          "label": "Text Hover",
+          "name": "text_hover",
+          "type": "color_picker",
+          "default_value": "#ffffff",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_border",
+          "label": "Border Color",
+          "name": "border_color",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#ed1c24",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_border_hover",
+          "label": "Border Hover",
+          "name": "border_hover",
+          "type": "color_picker",
+          "enable_opacity": 1,
+          "default_value": "#c41820",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cta_tertiary_border_width",
+          "label": "Border Width (px)",
+          "name": "border_width",
+          "type": "number",
+          "default_value": 2,
+          "min": 0,
+          "max": 10,
+          "wrapper": {
+            "width": "34"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_typography_tab",
+      "label": "Typography",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_font_source",
+      "label": "Font Source",
+      "name": "font_source",
+      "type": "select",
+      "instructions": "Choose between Google Fonts or self-hosted fonts",
+      "choices": {
+        "google": "Google Fonts",
+        "self_hosted": "Self-Hosted Fonts"
+      },
+      "default_value": "google"
+    },
+    {
+      "key": "field_google_font_primary",
+      "label": "Primary Font (Google)",
+      "name": "google_font_primary",
+      "type": "text",
+      "instructions": "Google Font name (e.g., 'Inter', 'Roboto', 'Open Sans')",
+      "default_value": "Inter",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_font_source",
+            "operator": "==",
+            "value": "google"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_google_font_secondary",
+      "label": "Secondary Font (Google)",
+      "name": "google_font_secondary",
+      "type": "text",
+      "instructions": "Optional secondary font for headings",
+      "placeholder": "Leave empty to use primary font",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_font_source",
+            "operator": "==",
+            "value": "google"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_google_font_weights",
+      "label": "Font Weights",
+      "name": "google_font_weights",
+      "type": "checkbox",
+      "instructions": "Select font weights to load",
+      "choices": {
+        "300": "Light (300)",
+        "400": "Regular (400)",
+        "500": "Medium (500)",
+        "600": "Semi-Bold (600)",
+        "700": "Bold (700)",
+        "800": "Extra-Bold (800)"
+      },
+      "default_value": ["400", "600", "700"],
+      "conditional_logic": [
+        [
+          {
+            "field": "field_font_source",
+            "operator": "==",
+            "value": "google"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "field_self_hosted_fonts",
+      "label": "Self-Hosted Font Files",
+      "name": "self_hosted_fonts",
+      "type": "repeater",
+      "instructions": "Upload font files (WOFF2 recommended for best performance)",
+      "button_label": "Add Font",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_font_source",
+            "operator": "==",
+            "value": "self_hosted"
+          }
+        ]
+      ],
+      "sub_fields": [
+        {
+          "key": "field_font_family_name",
+          "label": "Font Family Name",
+          "name": "family_name",
+          "type": "text",
+          "instructions": "CSS font-family name (e.g., 'MyCustomFont')",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_font_weight",
+          "label": "Weight",
+          "name": "weight",
+          "type": "select",
+          "choices": {
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "600": "Semi-Bold (600)",
+            "700": "Bold (700)",
+            "800": "Extra-Bold (800)"
+          },
+          "default_value": "400",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_font_style",
+          "label": "Style",
+          "name": "style",
+          "type": "select",
+          "choices": {
+            "normal": "Normal",
+            "italic": "Italic"
+          },
+          "default_value": "normal",
+          "wrapper": {
+            "width": "34"
+          }
+        },
+        {
+          "key": "field_font_file_woff2",
+          "label": "WOFF2 File",
+          "name": "file_woff2",
+          "type": "file",
+          "return_format": "array",
+          "mime_types": "woff2",
+          "wrapper": {
+            "width": "50"
+          }
+        },
+        {
+          "key": "field_font_file_woff",
+          "label": "WOFF File (Fallback)",
+          "name": "file_woff",
+          "type": "file",
+          "return_format": "array",
+          "mime_types": "woff",
+          "wrapper": {
+            "width": "50"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_base_font_size",
+      "label": "Base Font Size",
+      "name": "base_font_size",
+      "type": "number",
+      "instructions": "Base body text size in pixels",
+      "default_value": 16,
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "append": "px",
+      "wrapper": {
+        "width": "33"
+      }
+    },
+    {
+      "key": "field_line_height",
+      "label": "Base Line Height",
+      "name": "line_height",
+      "type": "number",
+      "instructions": "Line height multiplier",
+      "default_value": 1.6,
+      "min": 1,
+      "max": 3,
+      "step": 0.1,
+      "wrapper": {
+        "width": "33"
+      }
+    },
+    {
+      "key": "field_letter_spacing",
+      "label": "Letter Spacing",
+      "name": "letter_spacing",
+      "type": "number",
+      "instructions": "Letter spacing in pixels (0 = normal)",
+      "default_value": 0,
+      "min": -2,
+      "max": 5,
+      "step": 0.1,
+      "append": "px",
+      "wrapper": {
+        "width": "34"
+      }
+    },
+    {
+      "key": "field_heading_sizes_desktop",
+      "label": "Heading Sizes (Desktop)",
+      "name": "heading_sizes_desktop",
+      "type": "group",
+      "instructions": "Font sizes for headings on desktop (≥1024px)",
+      "sub_fields": [
+        {
+          "key": "field_h1_desktop",
+          "label": "H1",
+          "name": "h1",
+          "type": "number",
+          "default_value": 48,
+          "min": 20,
+          "max": 120,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h2_desktop",
+          "label": "H2",
+          "name": "h2",
+          "type": "number",
+          "default_value": 40,
+          "min": 18,
+          "max": 100,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h3_desktop",
+          "label": "H3",
+          "name": "h3",
+          "type": "number",
+          "default_value": 32,
+          "min": 16,
+          "max": 80,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h4_desktop",
+          "label": "H4",
+          "name": "h4",
+          "type": "number",
+          "default_value": 24,
+          "min": 14,
+          "max": 60,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h5_desktop",
+          "label": "H5",
+          "name": "h5",
+          "type": "number",
+          "default_value": 20,
+          "min": 12,
+          "max": 40,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h6_desktop",
+          "label": "H6",
+          "name": "h6",
+          "type": "number",
+          "default_value": 18,
+          "min": 12,
+          "max": 32,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_heading_sizes_mobile",
+      "label": "Heading Sizes (Mobile)",
+      "name": "heading_sizes_mobile",
+      "type": "group",
+      "instructions": "Font sizes for headings on mobile (<768px)",
+      "sub_fields": [
+        {
+          "key": "field_h1_mobile",
+          "label": "H1",
+          "name": "h1",
+          "type": "number",
+          "default_value": 32,
+          "min": 16,
+          "max": 80,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h2_mobile",
+          "label": "H2",
+          "name": "h2",
+          "type": "number",
+          "default_value": 28,
+          "min": 14,
+          "max": 60,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h3_mobile",
+          "label": "H3",
+          "name": "h3",
+          "type": "number",
+          "default_value": 24,
+          "min": 14,
+          "max": 50,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h4_mobile",
+          "label": "H4",
+          "name": "h4",
+          "type": "number",
+          "default_value": 20,
+          "min": 12,
+          "max": 40,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h5_mobile",
+          "label": "H5",
+          "name": "h5",
+          "type": "number",
+          "default_value": 18,
+          "min": 12,
+          "max": 32,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        },
+        {
+          "key": "field_h6_mobile",
+          "label": "H6",
+          "name": "h6",
+          "type": "number",
+          "default_value": 16,
+          "min": 12,
+          "max": 24,
+          "append": "px",
+          "wrapper": {
+            "width": "16.66"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_text_colors",
+      "label": "Text Colors",
+      "name": "text_colors",
+      "type": "group",
+      "instructions": "Default text and link colors",
+      "sub_fields": [
+        {
+          "key": "field_body_text_color",
+          "label": "Body Text",
+          "name": "body_text",
+          "type": "color_picker",
+          "default_value": "#231f20",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_heading_text_color",
+          "label": "Headings",
+          "name": "heading_text",
+          "type": "color_picker",
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_link_color",
+          "label": "Link Color",
+          "name": "link_color",
+          "type": "color_picker",
+          "default_value": "#174274",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_link_hover_color",
+          "label": "Link Hover",
+          "name": "link_hover",
+          "type": "color_picker",
+          "default_value": "#ed1c24",
+          "wrapper": {
+            "width": "25"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_contact_info_tab",
+      "label": "Contact Information",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_company_name",
+      "label": "Company Name",
+      "name": "company_name",
+      "type": "text",
+      "default_value": "INIM Fire Intelligence"
+    },
+    {
+      "key": "field_phone_number",
+      "label": "Phone Number",
+      "name": "phone_number",
+      "type": "text",
+      "placeholder": "+44 123 456 7890"
+    },
+    {
+      "key": "field_email_address",
+      "label": "Email Address",
+      "name": "email_address",
+      "type": "email",
+      "placeholder": "info@inimfire.com"
+    },
+    {
+      "key": "field_address",
+      "label": "Address",
+      "name": "address",
+      "type": "textarea",
+      "rows": 3,
+      "placeholder": "123 Fire Safety Street\nLondon, UK\nSW1A 1AA"
+    },
+    {
+      "key": "field_company_number",
+      "label": "Company Number",
+      "name": "company_number",
+      "type": "text",
+      "placeholder": "12345678"
+    },
+    {
+      "key": "field_header_settings_tab",
+      "label": "Header Settings",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_site_logo",
+      "label": "Site Logo",
+      "name": "site_logo",
+      "type": "image",
+      "return_format": "array",
+      "instructions": "Main logo displayed in header (recommended: SVG or PNG with transparency)"
+    },
+    {
+      "key": "field_logo_images",
+      "label": "Logo Components",
+      "name": "logo_images",
+      "type": "gallery",
+      "return_format": "array",
+      "instructions": "Multiple logo parts (if logo is split into separate images)"
+    },
+    {
+      "key": "field_header_cta_primary",
+      "label": "Primary CTA Button",
+      "name": "header_cta_primary",
+      "type": "group",
+      "sub_fields": [
+        {
+          "key": "field_header_cta_primary_text",
+          "label": "Button Text",
+          "name": "text",
+          "type": "text",
+          "default_value": "Contact us"
+        },
+        {
+          "key": "field_header_cta_primary_url",
+          "label": "Button URL",
+          "name": "url",
+          "type": "url",
+          "placeholder": "/contact"
+        },
+        {
+          "key": "field_header_cta_primary_style",
+          "label": "Button Style",
+          "name": "style",
+          "type": "select",
+          "choices": {
+            "primary": "Primary (Solid)",
+            "secondary": "Secondary (Outline)",
+            "tertiary": "Tertiary (Accent)"
+          },
+          "default_value": "primary"
+        }
+      ]
+    },
+    {
+      "key": "field_header_cta_secondary",
+      "label": "Secondary CTA Button",
+      "name": "header_cta_secondary",
+      "type": "group",
+      "sub_fields": [
+        {
+          "key": "field_header_cta_secondary_enabled",
+          "label": "Enable Secondary Button",
+          "name": "enabled",
+          "type": "true_false",
+          "default_value": 0
+        },
+        {
+          "key": "field_header_cta_secondary_text",
+          "label": "Button Text",
+          "name": "text",
+          "type": "text",
+          "conditional_logic": [
+            [
+              {
+                "field": "field_header_cta_secondary_enabled",
+                "operator": "==",
+                "value": "1"
+              }
+            ]
+          ]
+        },
+        {
+          "key": "field_header_cta_secondary_url",
+          "label": "Button URL",
+          "name": "url",
+          "type": "url",
+          "conditional_logic": [
+            [
+              {
+                "field": "field_header_cta_secondary_enabled",
+                "operator": "==",
+                "value": "1"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_show_search_icon",
+      "label": "Show Search Icon",
+      "name": "show_search_icon",
+      "type": "true_false",
+      "default_value": 1
+    },
+    {
+      "key": "field_search_icon",
+      "label": "Search Icon",
+      "name": "search_icon",
+      "type": "image",
+      "return_format": "array",
+      "conditional_logic": [
+        [
+          {
+            "field": "field_show_search_icon",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "field_footer_settings_tab",
+      "label": "Footer Settings",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_footer_logo",
+      "label": "Footer Logo",
+      "name": "footer_logo",
+      "type": "image",
+      "return_format": "array",
+      "instructions": "Logo displayed in footer (can be different from header logo)"
+    },
+    {
+      "key": "field_footer_tagline",
+      "label": "Footer Tagline",
+      "name": "footer_tagline",
+      "type": "textarea",
+      "rows": 2,
+      "placeholder": "Your trusted partner in fire safety solutions"
+    },
+    {
+      "key": "field_copyright_text",
+      "label": "Copyright Text",
+      "name": "copyright_text",
+      "type": "text",
+      "default_value": "© 2024 INIM Fire Intelligence. All rights reserved.",
+      "instructions": "Use {year} to automatically insert current year"
+    },
+    {
+      "key": "field_social_links",
+      "label": "Social Media Links",
+      "name": "social_links",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Social Link",
+      "sub_fields": [
+        {
+          "key": "field_social_platform",
+          "label": "Platform",
+          "name": "platform",
+          "type": "select",
+          "choices": {
+            "facebook": "Facebook",
+            "twitter": "Twitter / X",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram",
+            "youtube": "YouTube",
+            "tiktok": "TikTok"
+          }
+        },
+        {
+          "key": "field_social_url",
+          "label": "URL",
+          "name": "url",
+          "type": "url"
+        },
+        {
+          "key": "field_social_icon",
+          "label": "Custom Icon",
+          "name": "icon",
+          "type": "image",
+          "return_format": "array",
+          "instructions": "Optional: Upload custom icon (leave empty to use default)"
+        }
+      ]
+    },
+    {
+      "key": "field_accreditations_tab",
+      "label": "Accreditations",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_accreditations_image",
+      "label": "Accreditations Image",
+      "name": "accreditations_image",
+      "type": "image",
+      "return_format": "array",
+      "instructions": "Image showing certifications, awards, or accreditations"
+    },
+    {
+      "key": "field_accreditations_logos",
+      "label": "Accreditation Logos",
+      "name": "accreditations_logos",
+      "type": "gallery",
+      "return_format": "array",
+      "instructions": "Individual accreditation logos (alternative to single image)"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "options_page",
+        "operator": "==",
+        "value": "theme-settings"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label"
+}

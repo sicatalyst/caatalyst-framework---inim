@@ -1,0 +1,28 @@
+{
+  "key": "group_logos_slider_bottom",
+  "title": "Logos Slider Bottom Module",
+  "fields": [
+    {
+      "key": "field_logos_slider_title",
+      "label": "Title",
+      "name": "logos_slider_title",
+      "type": "text"
+    },
+    {
+      "key": "field_logos_slider_logos_bottom",
+      "label": "Logos",
+      "name": "logos_slider_logos_bottom",
+      "type": "gallery",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

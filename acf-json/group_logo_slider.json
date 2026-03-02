@@ -1,0 +1,22 @@
+{
+  "key": "group_logo_slider",
+  "title": "Logo Slider Module",
+  "fields": [
+    {
+      "key": "field_logo_slider_logos",
+      "label": "Logos",
+      "name": "logo_slider_logos",
+      "type": "gallery",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

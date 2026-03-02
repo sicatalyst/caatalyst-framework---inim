@@ -1,0 +1,61 @@
+{
+  "key": "group_products",
+  "title": "Products Slider Module",
+  "fields": [
+    {
+      "key": "field_products_label",
+      "label": "Label",
+      "name": "products_label",
+      "type": "text"
+    },
+    {
+      "key": "field_products_title",
+      "label": "Title",
+      "name": "products_title",
+      "type": "text"
+    },
+    {
+      "key": "field_products_items",
+      "label": "Product Items",
+      "name": "products_items",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_product_image",
+          "label": "Image",
+          "name": "image",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_product_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_product_description",
+          "label": "Description",
+          "name": "description",
+          "type": "textarea"
+        },
+        {
+          "key": "field_product_button_text",
+          "label": "Button Text",
+          "name": "button_text",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

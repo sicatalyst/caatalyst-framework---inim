@@ -1,0 +1,67 @@
+{
+  "key": "group_image",
+  "title": "Image",
+  "fields": [
+    {
+      "key": "field_image_image",
+      "label": "Image",
+      "name": "image_image",
+      "type": "image",
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "required": 1
+    },
+    {
+      "key": "field_image_caption",
+      "label": "Caption",
+      "name": "image_caption",
+      "type": "text",
+      "instructions": "Optional caption below image"
+    },
+    {
+      "key": "field_image_link",
+      "label": "Link URL",
+      "name": "image_link",
+      "type": "url",
+      "instructions": "Optional link when image is clicked"
+    },
+    {
+      "key": "field_image_size",
+      "label": "Image Size",
+      "name": "image_size",
+      "type": "select",
+      "choices": {
+        "full": "Full Width",
+        "large": "Large (1200px)",
+        "medium": "Medium (800px)",
+        "small": "Small (600px)"
+      },
+      "default_value": "large"
+    },
+    {
+      "key": "field_image_alignment",
+      "label": "Alignment",
+      "name": "image_alignment",
+      "type": "select",
+      "choices": {
+        "center": "Center",
+        "left": "Left",
+        "right": "Right"
+      },
+      "default_value": "center"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0
+}

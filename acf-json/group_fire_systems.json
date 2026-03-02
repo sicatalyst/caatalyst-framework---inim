@@ -1,0 +1,50 @@
+{
+  "key": "group_fire_systems",
+  "title": "Fire Systems Module",
+  "fields": [
+    {
+      "key": "field_fire_systems_title",
+      "label": "Title",
+      "name": "fire_systems_title",
+      "type": "text"
+    },
+    {
+      "key": "field_fire_systems_cards",
+      "label": "System Cards",
+      "name": "fire_systems_cards",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_fire_system_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_fire_system_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_fire_system_arrow_icon",
+          "label": "Arrow Icon",
+          "name": "arrow_icon",
+          "type": "image",
+          "return_format": "array"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

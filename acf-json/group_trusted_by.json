@@ -1,0 +1,28 @@
+{
+  "key": "group_trusted_by",
+  "title": "Trusted By Module",
+  "fields": [
+    {
+      "key": "field_trusted_by_title",
+      "label": "Title",
+      "name": "trusted_by_title",
+      "type": "text"
+    },
+    {
+      "key": "field_trusted_by_logos",
+      "label": "Logos",
+      "name": "trusted_by_logos",
+      "type": "gallery",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

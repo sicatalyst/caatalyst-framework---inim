@@ -1,0 +1,55 @@
+{
+  "key": "group_about",
+  "title": "About Module",
+  "fields": [
+    {
+      "key": "field_about_background_image",
+      "label": "Background Image",
+      "name": "about_background_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_about_label",
+      "label": "Label",
+      "name": "about_label",
+      "type": "text"
+    },
+    {
+      "key": "field_about_title",
+      "label": "Title",
+      "name": "about_title",
+      "type": "text"
+    },
+    {
+      "key": "field_about_description",
+      "label": "Description",
+      "name": "about_description",
+      "type": "wysiwyg",
+      "tabs": "all",
+      "toolbar": "basic"
+    },
+    {
+      "key": "field_about_button_text",
+      "label": "Button Text",
+      "name": "about_button_text",
+      "type": "text"
+    },
+    {
+      "key": "field_about_icon_images",
+      "label": "Icon Images",
+      "name": "about_icon_images",
+      "type": "gallery",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

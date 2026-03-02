@@ -1,0 +1,30 @@
+/* ===== TRUSTED BY LOGO BAR ===== */
+.trusted-by-logo {
+  background-color: #174274;
+  padding: 2rem;
+}
+
+.trusted-by-logo h2 {
+  max-width: 1440px;
+  margin: 0 auto 1rem;
+  font-family: "Kumbh Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.trusted-logos {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.trusted-logos img {
+  max-width: 9rem;
+  height: 3rem;
+  object-fit: contain;
+}

@@ -1,0 +1,60 @@
+{
+  "key": "group_accordion",
+  "title": "Accordion",
+  "fields": [
+    {
+      "key": "field_accordion_title",
+      "label": "Section Title",
+      "name": "accordion_title",
+      "type": "text",
+      "instructions": "Optional title above accordion"
+    },
+    {
+      "key": "field_accordion_items",
+      "label": "Accordion Items",
+      "name": "accordion_items",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_accordion_item_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_accordion_item_content",
+          "label": "Content",
+          "name": "content",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "basic",
+          "media_upload": 1,
+          "required": 1
+        },
+        {
+          "key": "field_accordion_item_open",
+          "label": "Open by Default",
+          "name": "open_default",
+          "type": "true_false",
+          "default_value": 0,
+          "ui": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0
+}
